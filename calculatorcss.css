@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fafafa;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 200px;
+    gap: 10px;
+}
+
+#display {
+    grid-column: span 4;
+    height: 50px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px;
+    font-size: 24px;
+}
+
+/* CSS code */
+button {
+    /* Your button styles */
+    background-color: #a2b4a2;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    /* Default background color */
+
+    /* Change the background color when the button is clicked */
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    background-color: #6d457e;
+    /* New background color when the button is clicked */
+}
